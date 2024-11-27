@@ -1,6 +1,10 @@
-const MyChildComponent = () => {
+const MyChildComponent = (props) => {
     return (
-        <div>Soy el componente hijo</div>
+        <div>
+            <h1>Soy el componente hijo</h1>
+            <div>Mi nombre es: {props.name}</div>
+            <div>Mi edad es: {props.edad}</div>
+        </div>
     )
 }
 
