@@ -2,7 +2,7 @@ import './App.css';
 import MyComponent from './components/MyComponent';
 // import { HeaderNavBar, FirstHeroSection,SecondHeroSection, ThirdHeroSection, FourthHeroSection, FifthHeroSection, Footer } from './components/BubbleComponents';
 import { BrowserRouter } from 'react-router-dom'
-import RouterApp from './components/Router';
+import Router from "./components/Router";
 
 function App() {
   return (
@@ -16,12 +16,12 @@ function App() {
       <FifthHeroSection />
       <Footer /> */}
 
-        <MyComponent />
-        {/* <Counter /> */}
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
 
-        {/* <BrowserRouter>
-          <RouterApp />
-        </BrowserRouter> */}
+      {/* <MyComponent /> */}
+      {/* <Counter /> */}
 
     </div>
   );
